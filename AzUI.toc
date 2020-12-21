@@ -1,0 +1,8 @@
+## Interface: 90002
+## Title: AzUI
+## Author: Azasa@ArgentDawn
+## Version: 1.0.0
+## Notes: Rearrange the default wow ui according to my preference.
+## SavedVariablesPerCharacter: AzUI
+
+AzUI.lua
