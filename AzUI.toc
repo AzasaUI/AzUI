@@ -1,8 +1,8 @@
-## Interface: 90002
+## Interface: 90005
 ## Title: AzUI
 ## Author: Azasa@ArgentDawn
-## Version: 1.0.0
-## Notes: Rearrange the default wow ui according to my preference.
+## Version: 1.0.1
+## Notes: Simple addon that rearranges the default ui
 ## SavedVariablesPerCharacter: AzUI
 
 AzUI.lua
