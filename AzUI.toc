@@ -1,7 +1,7 @@
 ## Interface: 90105
 ## Title: AzUI
 ## Author: Azasa@ArgentDawn
-## Version: 1.0.1
+## Version: 1.0.2
 ## Notes: Simple addon that rearranges the default ui
 ## SavedVariablesPerCharacter: AzUI
 
