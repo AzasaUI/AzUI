@@ -87,11 +87,8 @@ local function AzUI_EventHandler(self, event, arg, ...)
 	    ActionButton7:ClearAllPoints()
 	    ActionButton7:SetPoint('BOTTOMLEFT', UIParent, 'BOTTOM', -(3 * (36 + 6)) + 4.5, (2 * (36 + 6)) + 1)
 
-	    ActionButton7:ClearAllPoints()
-	    ActionButton7:SetPoint('BOTTOMLEFT', UIParent, 'BOTTOM', -(3 * (36 + 6)) + 4.5, (2 * (36 + 6)) + 1)
-
 		UIPARENT_MANAGED_FRAME_POSITIONS['MainMenuBar'] = nil
-		
+
 		-- Bottom left action bar
 
 		MultiBarBottomLeftButton1:ClearAllPoints()
@@ -142,6 +139,23 @@ local function AzUI_EventHandler(self, event, arg, ...)
 
 		--VIEWABLE_ACTION_BAR_PAGES[LEFT_ACTIONBAR_PAGE] = nil
 	    --hooksecurefunc('MultiActionBar_Update', function() MultiBarLeft:Show() end)
+
+		-- Button appearance
+
+	    local function FixUpButton(name)
+			_G[name].NormalTexture:SetVertexColor(1.0, 1.0, 1.0, 0.5)
+
+			local bg = _G[name .. 'FloatingBG']
+
+			if bg then bg:SetTexture(nil) end
+	    end
+
+	    for i = 1, 12 do
+			FixUpButton('ActionButton' .. i)
+			FixUpButton('MultiBarBottomLeftButton' .. i)
+			FixUpButton('MultiBarBottomRightButton' .. i)
+			FixUpButton('AzUI_ActionBarButton' .. i)
+	    end
 
 		-- Pet bar
 
